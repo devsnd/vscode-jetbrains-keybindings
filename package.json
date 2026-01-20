@@ -900,6 +900,10 @@
         "key": "ctrl+shift+f10",
         "when": "editorTextFocus",
         "command": "testing.runAtCursor"
+      },
+      {
+        "key": "shift+f10",
+        "command": "testing.reRunLastRun"
       }
     ],
     "configuration": {
