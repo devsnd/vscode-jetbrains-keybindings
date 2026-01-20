@@ -895,6 +895,11 @@
       {
         "key": "ctrl+shift+left",
         "command": "cursorWordLeftSelect"
+      },
+      {
+        "key": "ctrl+shift+f10",
+        "when": "editorTextFocus",
+        "command": "testing.runAtCursor"
       }
     ],
     "configuration": {
