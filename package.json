@@ -2,8 +2,8 @@
   "name": "window-webstorm-keybindins",
   "displayName": "JetBrains IDE Keymap Force To Windows",
   "description": "On windows and mac, the windinos version of the jetbrain shortcut key is used. fork from 'isudox/vscode-jetbrains-keybindings'",
-  "version": "1.0.7",
-  "publisher": "ccwq",
+  "version": "1.0.10",
+  "publisher": "devsnd",
   "license": "MIT",
   "scripts": {
     "package": "vsce package --no-yarn",
@@ -237,6 +237,7 @@
       {
         "key": "ctrl+f",
         "command": "actions.find",
+        "when": "editorFocus && editorIsOpen",
         "jetbrains": "Find"
       },
       {
@@ -904,6 +905,15 @@
       {
         "key": "shift+f10",
         "command": "testing.reRunLastRun"
+      },
+      {
+        "key": "alt+f1",
+        "command": "workbench.view.explorer"
+      },
+      {
+        "key": "escape",
+        "when": "!editorTextFocus",
+        "command": "workbench.action.focusActiveEditorGroup"
       }
     ],
     "configuration": {
